@@ -1,118 +1,128 @@
-# 📊 Customer Churn Analytics
+<div align="center">
 
-## 🎯 Problema de negócio
+# CUSTOMER CHURN ANALYTICS
 
-A análise busca entender o comportamento de churn dos clientes e identificar os principais segmentos associados ao cancelamento.
+### Customer Intelligence · Churn Risk · Customer Segmentation
 
-O objetivo é transformar os dados de clientes em informações que apoiem decisões de retenção, identificação de perfis de risco e acompanhamento dos principais indicadores de churn.
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
 
----
+**Análise de churn e segmentação de clientes para apoiar decisões estratégicas de retenção.**
 
-## 🗂️ Sobre os dados
-
-- **Fonte:** Dataset público de Customer Churn — Kaggle
-- **Tamanho:** 7.043 clientes e 19 variáveis
-- **Tipo de análise:** Customer Churn / Customer Retention
-- **Unidade de análise:** cliente
-
-### Principais informações analisadas
-
-- Perfil dos clientes
-- Partner e Dependents
-- Tenure
-- Tipo de contrato
-- Serviços de internet
-- Serviços adicionais
-- Monthly Charges
-- Total Charges
-- Forma de pagamento
-- Status de Churn
+</div>
 
 ---
 
-## 🛠️ Ferramentas utilizadas
+## Visão geral do projeto
 
-- **Python**
-- **Pandas / NumPy**
-- **Jupyter Notebook**
-- **Matplotlib / Seaborn**
-- **Power Query**
-- **Power BI**
-- **DAX**
-- **Git / GitHub**
+![Capa — Customer Churn Analytics](https://raw.githubusercontent.com/rrleone/Customer_Churn_Analytics/main/images/05_COVER.png)
 
----
+O **Customer Churn Analytics** é um projeto de análise de dados desenvolvido com o objetivo de compreender o comportamento de cancelamento de clientes (*customer churn*), investigar características associadas à saída de clientes e identificar segmentos relevantes para estratégias de retenção.
 
-## 🔍 Etapas da análise
+O projeto reúne preparação e qualidade dos dados, análise exploratória, engenharia de atributos, modelagem, avaliação e visualização de indicadores em dashboards desenvolvidos no Power BI.
 
-1. **Data Profiling** — entendimento da estrutura, dimensões, tipos e características das variáveis.
-2. **Data Cleaning** — tratamento e preparação dos dados para análise.
-3. **Análise Exploratória (EDA)** — investigação do comportamento de churn segundo perfil, tenure, contrato, serviços e forma de pagamento.
-4. **Feature Engineering** — criação de agrupamentos e variáveis analíticas, incluindo faixas de tenure e perfil de risco.
-5. **Modeling** — desenvolvimento das análises e modelos relacionados ao comportamento de churn.
-6. **Model Evaluation** — avaliação dos resultados obtidos.
-7. **Business Insights** — transformação dos resultados em informações relevantes para retenção de clientes.
-8. **Power BI Dashboard** — construção de dashboard executivo com três páginas de análise.
+## Dashboards
 
----
+### 01 · Executive Overview
 
-## 📈 Principais insights
+Visão executiva da base de clientes, dos cancelamentos e de indicadores relacionados à retenção.
 
-- **26,54%** dos clientes da base apresentam churn.
-- Clientes com contrato **Month-to-month** apresentam taxa de churn de **42,7%**.
-- Clientes com **0–12 meses** de relacionamento apresentam taxa de churn de **47,4%**.
-- Clientes com serviço de internet **Fiber optic** apresentam taxa de churn de **41,9%**.
-- **Electronic check** apresenta a maior taxa de churn entre as formas de pagamento analisadas, com **45,29%**.
-- Clientes classificados como **Senior Citizen** apresentam taxa de churn de **41,7%**, contra **23,6%** entre os demais clientes.
-- Clientes **sem dependents** apresentam taxa de churn de **31,28%**, enquanto clientes com dependents apresentam **15,45%**.
+![Executive Overview](https://raw.githubusercontent.com/rrleone/Customer_Churn_Analytics/main/images/01_EXECUTIVE%20OVERVIEW.png)
 
-Os resultados representam associações observadas na base analisada e não implicam, isoladamente, relação de causalidade.
+### 02 · Customer Retention Analytics
 
----
+Análise do perfil dos clientes e de dimensões associadas ao churn, incluindo gênero, tempo de relacionamento, serviço de internet e forma de pagamento.
 
-## 🖼️ Prévia do dashboard
+![Customer Retention Analytics](https://raw.githubusercontent.com/rrleone/Customer_Churn_Analytics/main/images/02_CUSTOMER%20RETENTION%20ANALYTICS.png)
 
-O projeto possui três páginas no Power BI:
+### 03 · Churn Risk & Customer Segmentation
 
-### 01 — Executive Overview
+Análise de churn por serviços adicionais, tempo de relacionamento, tipo de contrato e perfil de adoção de serviços.
 
-Visão executiva dos principais KPIs e indicadores associados ao churn.
+![Churn Risk and Customer Segmentation](https://raw.githubusercontent.com/rrleone/Customer_Churn_Analytics/main/images/03_CHURN%20RISK%20%26%20CUSTOMER%20SEGMENTATION.png)
 
-### 02 — Customer Profile & Churn Drivers
+### 04 · Customer Intelligence
 
-Análise do perfil dos clientes e dos principais fatores associados ao churn.
+Síntese das descobertas analíticas e oportunidades de ação relacionadas à retenção de clientes.
 
-### 03 — Churn Risk & Customer Segmentation
+![Customer Intelligence](https://raw.githubusercontent.com/rrleone/Customer_Churn_Analytics/main/images/04_CUSTOMER%20INTELLIGENCE.png)
 
-Análise de risco, segmentação de clientes e visualização do perfil dos clientes.
+## Problema de negócio e objetivos
 
-A capa do projeto está disponível em `images/Customer_Churn_Analytics_Capa.png`.
+A perda de clientes pode comprometer a receita e aumentar a necessidade de aquisição de novos consumidores. Compreender os perfis e comportamentos associados ao cancelamento ajuda a direcionar análises e apoiar decisões de relacionamento.
 
----
+**Objetivos:**
 
-## ✅ Conclusão e recomendação
+- Investigar características dos clientes associadas ao churn.
+- Comparar taxas de cancelamento entre tipos de contrato.
+- Analisar o comportamento de churn ao longo do tempo de relacionamento.
+- Explorar a relação entre serviços adicionais e cancelamento.
+- Segmentar clientes segundo a adoção de serviços.
+- Comunicar resultados por meio de indicadores e dashboards.
 
-A análise indica concentração de churn em determinados segmentos, especialmente entre clientes com contratos Month-to-month, menor tempo de relacionamento e determinados serviços e formas de pagamento.
+## Dados utilizados
 
-Como oportunidade de negócio, esses segmentos podem ser utilizados como base para estratégias de retenção e acompanhamento direcionado, com posterior validação dos resultados das ações implementadas.
+O projeto utiliza o conjunto público **Telco Customer Churn**, disponibilizado como amostra de dados da IBM.
 
----
+A base contém **7.043 registros de clientes** e atributos relacionados a perfil demográfico, serviços contratados, contrato, cobrança, tempo de relacionamento e situação de cancelamento.
 
-## 📁 Estrutura do repositório
+A organização dos arquivos separa:
+
+- `data/raw/`: arquivo de origem preservado.
+- `data/processed/`: base tratada utilizada nas análises.
+
+## Metodologia analítica
+
+O fluxo de trabalho está documentado em seis notebooks:
+
+| Etapa | Notebook | Objetivo |
+|---|---|---|
+| 01 | `01_data_profiling.ipynb` | Compreensão e diagnóstico inicial dos dados |
+| 02 | `02_data_cleaning.ipynb` | Limpeza e preparação da base |
+| 03 | `03_eda_churn.ipynb` | Análise exploratória do comportamento de churn |
+| 04 | `04_feature_engineering.ipynb` | Construção e preparação de atributos |
+| 05 | `05_modeling.ipynb` | Desenvolvimento da etapa de modelagem |
+| 06 | `06_model_evaluation.ipynb` | Avaliação dos modelos desenvolvidos |
+
+**Fluxo:** Dados → Qualidade → Análise Exploratória → Engenharia de Atributos → Modelagem → Avaliação → Insights.
+
+## Principais perspectivas analisadas
+
+- **Contrato:** comparação da incidência de churn entre contratos mensais, anuais e bienais.
+- **Tenure:** análise do comportamento de cancelamento conforme o tempo de relacionamento.
+- **Serviços adicionais:** comparação das taxas de churn entre clientes com diferentes serviços contratados.
+- **Perfil de consumo:** segmentação segundo a quantidade de serviços adicionais adotados.
+- **Forma de pagamento e internet:** investigação de diferenças entre categorias de clientes.
+
+As relações observadas são associações descritivas e não demonstram, por si só, causalidade.
+
+## Tecnologias e ferramentas
+
+| Tecnologia | Aplicação no projeto |
+|---|---|
+| Python | Preparação, exploração e análise dos dados |
+| Pandas e NumPy | Manipulação e processamento |
+| Jupyter Notebook | Desenvolvimento e documentação das análises |
+| Power BI | Modelagem analítica e dashboards |
+| DAX | Medidas e indicadores |
+| GitHub | Versionamento e documentação do projeto |
+
+## Estrutura do repositório
 
 ```text
-Customer-Churn-Analytics/
-│
+Customer_Churn_Analytics/
 ├── data/
 │   ├── raw/
 │   │   └── WA_Fn-UseC_-Telco-Customer-Churn.csv
-│   │
 │   └── processed/
 │       └── customer_churn_clean.csv
-│
 ├── images/
-│   └── Customer_Churn_Analytics_Capa.png
-│
+│   ├── 01_EXECUTIVE OVERVIEW.png
+│   ├── 02_CUSTOMER RETENTION ANALYTICS.png
+│   ├── 03_CHURN RISK & CUSTOMER SEGMENTATION.png
+│   ├── 04_CUSTOMER INTELLIGENCE.png
+│   └── 05_COVER.png
 ├── notebooks/
 │   ├── 01_data_profiling.ipynb
 │   ├── 02_data_cleaning.ipynb
@@ -120,31 +130,41 @@ Customer-Churn-Analytics/
 │   ├── 04_feature_engineering.ipynb
 │   ├── 05_modeling.ipynb
 │   └── 06_model_evaluation.ipynb
-│
+├── powerbi/
+│   └── CUSTOMER_CHURN.pbix
 └── README.md
 ```
 
+## Autor
+
+**Renato Leone**  
+Analista de Dados | Business Intelligence
+
+- **GitHub:** [github.com/rrleone](https://github.com/rrleone)
+- **Portfólio:** [Renato Leone — Data Analytics & BI](https://sites.google.com/view/renatoleone/)
+- **Repositório:** [Customer_Churn_Analytics](https://github.com/rrleone/Customer_Churn_Analytics)
+
+## Referências
+
+**Dados**
+
+- IBM — [Telco Customer Churn Sample Dataset](https://github.com/IBM/telco-customer-churn-on-icp4d)
+- Kaggle — [Telco Customer Churn Dataset](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
+
+**Documentação**
+
+- [Python](https://docs.python.org/3/)
+- [Pandas](https://pandas.pydata.org/docs/)
+- [Microsoft Power BI](https://learn.microsoft.com/power-bi/)
+- [DAX — Microsoft Learn](https://learn.microsoft.com/dax/)
+
 ---
 
-## 🚀 Como reproduzir
+<div align="center">
 
-Clone o repositório:
+**CUSTOMER CHURN ANALYTICS**  
+*Dados · Qualidade · Análise · Insights · Decisões*
 
-```bash
-git clone https://github.com/rrleone/Customer-Churn-Analytics.git
-cd Customer-Churn-Analytics
-```
+**RENATO LEONE | DATA ANALYTICS & BUSINESS INTELLIGENCE**
 
-Abra os notebooks na ordem indicada em `notebooks/` e execute as etapas da análise.
-
-O dashboard pode ser aberto no Power BI Desktop quando o arquivo `.pbix` estiver disponível no projeto.
-
----
-
-## 👤 Autor
-
-**Renato Leone**
-
-Analista de Dados | BI | Power BI | Python
-
-GitHub: https://github.com/rrleone
+</div>
